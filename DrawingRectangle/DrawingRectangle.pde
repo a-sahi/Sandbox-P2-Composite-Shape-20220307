@@ -1,6 +1,6 @@
 //Global Variables
 int x = width*1/4, y = height*1/4, rectWidth = width*1/2, rectHeight = height*1/2;
-int backgroundBlue=0;
+int backgroundBlue;
 int strokeRest=1;
 int thin=width*1/50, thick=2*thin;
 color strokeColour, fillColour;
@@ -36,27 +36,29 @@ void draw()
     strokeColour = yellow;
     fillColour = purple;
     println("here", backgroundBlue);
-} //End Night Mode
-//
-background( color(random(0, 255), random(255), backgroundBlue) );
-strokeWeight(thick);
-stroke(strokeColour);
-fill(fillColour);
-rect(x, y, rectWidth, rectHeight);
-//rest to defaults
-fill(whiteReset);
-stroke(blackReset);
-strokeWeight(strokeRest);
+  } //End Night Mode
+  //
+  background( color(random(0, 255), random(255), backgroundBlue) );
+  strokeWeight(thick);
+  stroke(strokeColour);
+  fill(fillColour);
+  rect(x, y, rectWidth, rectHeight);
+  //rest to defaults
+  fill(whiteReset);
+  stroke(blackReset);
+  strokeWeight(strokeRest);
 }//End draw
 //
-void keyPressed() {}//End keyPressed
+void keyPressed() {
+}//End keyPressed
 //
-void mousePressed() {}//End mousePressed
+void mousePressed() {
+}//End mousePressed
 
 
 
 /*
 
 
-//End of Program
-*/
+ //End of Program
+ */
